@@ -73,17 +73,38 @@ export const COLORS = {
 ## Estructura del Proyecto
 
 ```text
-src/
-├── components/
-├── screens/
-├── navigation/
-├── store/
-├── hooks/
-├── services/
-├── types/
-├── utils/
-├── constants/
-└── assets/
+app/
+├── _layout.tsx          (Navegación principal)
+├── (public)/            (Rutas públicas - sin autenticación)
+│   ├── _layout.tsx
+│   ├── index.tsx        (Welcome/Home)
+│   ├── login.tsx
+│   └── register.tsx
+├── (protected)/         (Rutas protegidas - requieren autenticación)
+│   ├── _layout.tsx
+│   ├── home.tsx
+│   ├── profile.tsx
+│   └── settings.tsx
+└── modal/               (Modales compartidos)
+    └── example.tsx
+
+components/
+├── ui/                  (Componentes base reutilizables)
+├── forms/               (Componentes de formularios)
+└── common/              (Componentes comunes - Button, Logo, etc.)
+
+services/
+├── api.ts              (Cliente HTTP centralizado)
+└── auth.ts             (Servicio de autenticación)
+
+hooks/                  (Custom hooks reutilizables)
+context/                (React Context providers)
+types/                  (TypeScript tipos y interfaces)
+utils/                  (Utilidades y helpers)
+constants/              (Constantes globales)
+assets/
+├── icons/
+└── images/
 ```
 
 ## Componentes

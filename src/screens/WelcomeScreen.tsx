@@ -1,8 +1,8 @@
 import { ImageBackground, View, useColorScheme } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import Button from "../components/Button";
-import CustomText from "../components/CustomText";
-import Logo from "../components/Logo";
+import Button from "@/components/common/Button";
+import CustomText from "@/components/common/CustomText";
+import Logo from "@/components/common/Logo";
 
 const backgroundImage = require("../../assets/images/fondo.jpeg");
 
