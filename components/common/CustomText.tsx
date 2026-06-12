@@ -9,7 +9,7 @@ interface CustomTextProps extends TextProps {
 }
 
 const VARIANT_CLASSES: Record<TextVariant, string> = {
-  h1: "text-4xl font-bold text-white",
+  h1: "text-2xl font-bold text-white",
   body: "text-base text-zinc-300",
 };
 

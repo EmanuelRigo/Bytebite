@@ -10,7 +10,7 @@ interface ButtonProps extends TouchableOpacityProps {
 }
 
 const VARIANT_CLASSES: Record<ButtonVariant, string> = {
-  primary: "bg-[#849669] border border-transparent text-white",
+  primary: "bg-primary border border-transparent text-white",
   outline: "border border-zinc-500 bg-transparent text-zinc-100",
   text: "bg-transparent text-emerald-200",
 };
